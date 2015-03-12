@@ -22,6 +22,9 @@ Vagrant.configure(2) do |config|
   # Shares the app folder
   config.vm.synced_folder "apps", "/home/vagrant/apps/"
 
+  # Flask Port
+  config.vm.network :forwarded_port, host: 5000, guest: 5000
+
 
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
