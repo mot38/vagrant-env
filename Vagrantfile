@@ -25,6 +25,9 @@ Vagrant.configure(2) do |config|
   # Flask Port
   config.vm.network :forwarded_port, host: 5000, guest: 5000
 
+  # Jenkins Port
+  config.vm.network :forwarded_port, host: 8080, guest: 8080
+
 
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
